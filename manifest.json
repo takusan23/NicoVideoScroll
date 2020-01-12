@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "NicoVideoScroll",
+    "version": "1.0.0",
+    "description": "ニコ動の自動再生がプレイヤーまでスクロールしないと行けないのでスクロールする拡張機能",
+    "icons": {
+        "48": "icons/nicovideoscroll_icon_48.png",
+        "128": "icons/nicovideoscroll_icon_128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.nicovideo.jp/watch/*"
+            ],
+            "js": [
+                "scroll.js"
+            ]
+        }
+    ]
+}
